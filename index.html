@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+    input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body>
+      <header>
+      <form action="login.php" method="POST">
+        <div class="login-box">
+          <h1>Login</h1>
+          <div class="textbox">
+            <i class="fas fa-user"></i>
+              <input type="text" id="user" name="user" placeholder="Username">
+          </div>
+          <div class="textbox">
+            <i class="fas fa-lock"></i>
+
+              <i class="hide fas fa-eye-slash"></i>
+              <i class="show fas fa-eye"></i>
+              <input class="password" type="password" id="pass" name="pass" placeholder="Password" required minlength="8" aria-describedby="passwordHint" autocomplete="current-password">
+              
+          </div>  
+          <input type="submit" id="btn" class="button" value="Login">
+        </div>
+    </form>
+<script type="text/javascript">
+  var passwordField = document.querySelector('.password');
+  var show = document.querySelector('.show');
+  var hide = document.querySelector('.hide ');
+
+  show.onclick = function () {
+    passwordField.setAttribute("type","text");
+    show.style.display="none";
+    hide.style.display="block";
+  }
+  hide.onclick = function () {
+    passwordField.setAttribute("type","passwordField");
+    hide.style.display="none";
+    show.style.display="block";
+  }
+</script>
+      </header>
+  </body>
+</html>

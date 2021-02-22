@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DashBoard</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.2-web/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		
+</head>
+<body class="overlay-scrollbar light sidebar-expand">
+
+
+	<div class="navbar">
+		<ul class="navbar-nav">
+			<li class="navbar-item">
+				<img src="img/logo.png" alt="MyLogo" class="logo">
+			</li>
+		</ul>
+		<form class="navbar-search">
+			<input type="text" name="Search" class="navbar-search-input" placeholder="What you looking for....">
+			<i class="fas fa-search"></i>
+		</form>
+		<ul class="navbar-nav nav-right">
+			<li class="navbar-item">
+				 <a class="nav-link" href="#" onclick="switchTheme()">
+				 	<i class="fas fa-moon dark-icon"></i>
+				 	<i class="fas fa-sun light-icon"></i>
+				 </a>
+			</li>
+			<li class="navbar-item dropdown">
+				<a class="nav-link">
+					<i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu-id"> </i>
+					<span class="navbar-badge">15</span>
+				</a>
+				<ul id="notification-menu-id" class="dropdown-menu notification-menu">
+					<div class="dropdown-menu-header">
+						<span>
+							Notification
+						</span>
+					</div>
+					<div class="dropdown-menu-content overlay-scrollbar">
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Kuch bhi 1
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Kuch bhi 2
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Kuch bhi 3
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Kuch bhi 2
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Kuch bhi 4
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Kuch bhi 2
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li> 
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Kuch bhi 1
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Kuch bhi 2
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Kuch bhi 3
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Kuch bhi 2
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+			0			<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Kuch bhi 4
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Kuch bhi 2
+									<br>
+								<span>
+									21-02-2021
+								</span>
+								</span>
+							</a>
+						</li> 	
+					</div>
+
+					<div class="dropdown-menu-footer">
+						<span>
+							View all Notifications
+						</span>
+					</div>
+				</ul>
+			</li>
+			<li class="navbar-item">
+				<div class="harsh dropdown">
+					<img src="img/user.png" alt="User" class="dropdown-toggle" data-toggle=
+					"user-menu">
+					<ul id="user-menu" class="dropdown-menu">
+						<li class="dropdown-menu-item">
+							<a href="#nowhere" class="dropdown-menu-link">
+								<div>
+								<i class="fas fa-user-tie"></i>
+								</div>
+								<span>Profile</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#nowhere" class="dropdown-menu-link">
+								<div>
+								<i class="fas fa-cog"></i>
+								</div>
+								<span>Settings</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#nowhere" class="dropdown-menu-link">
+								<div>
+								<i class="fas fa-credit-card"></i>
+								</div>
+								<span>Payments</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#nowhere" class="dropdown-menu-link">
+								<div>
+								<i class="fas fa-sign-out-alt"></i>
+								</div>
+								<span>Logout</span>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="sidebar">
+		<ul class="sidebar-nav">
+			<li class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link active">
+					<div>
+						<i class="fas fa-tachometer-alt"></i>
+					</div>
+					<span>
+						Dashboard
+					</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-upload"></i>
+					</div>
+					<span>Import</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-download"></i>
+					</div>
+					<span>Export</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-tasks"></i>
+					</div>
+					<span>Menu</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item"> 
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-cog"></i>
+					</div>
+					<span>Setting</span>
+				</a>
+			</li>
+	</div>
+	<div class="wrapper">
+		
+	</div>
+<script src="js/index.js">
+	
+</script> 
+</body>
+</html>
