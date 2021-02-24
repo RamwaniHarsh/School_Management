@@ -21,7 +21,7 @@
   </head>
   <body>
       <header>
-      <form action="login.php" method="POST">
+      <form class="login-form" action="login.php" method="POST">
         <div class="login-box">
           <h1>Login</h1>
           <div class="textbox">
@@ -36,7 +36,9 @@
               <input class="password" type="password" id="pass" name="pass" placeholder="Password" required minlength="8" aria-describedby="passwordHint" autocomplete="current-password">
               
           </div>  
+          <div class="login">
           <input type="submit" id="btn" class="button" value="Login">
+          </div>
         </div>
     </form>
 <script type="text/javascript">
@@ -50,7 +52,7 @@
     hide.style.display="block";
   }
   hide.onclick = function () {
-    passwordField.setAttribute("type","passwordField");
+    passwordField.setAttribute("type","password");
     hide.style.display="none";
     show.style.display="block";
   }

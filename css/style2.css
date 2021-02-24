@@ -32,7 +32,7 @@ header{
 }
 
 .logo{
-  height: 120px;
+  height: 50px;
   width: auto;
   float: left;
   margin-top: 20px;
@@ -60,11 +60,22 @@ header{
 .main-nav li a:hover{
   border-bottom: 2px solid #bf55ec;
 }
+.login-form{
+  margin-top: 230px;
+  margin-left: 560px;
+  height: 330px;
+  width: 380px;
+  border: 5px solid #ffff;
+  border-radius: 40px;
+}
 .login-box{
   width: 280px;
+  padding: 1%;
   position: absolute;
   top: 50%;
   left: 50%;
+  /*border: 5px solid #ffff;*/
+  /*border-radius: 50px;*/
   transform: translate(-50%,-50%);
   color: white;
 }
@@ -105,9 +116,12 @@ header{
 }
 .show,
 .hide{
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
   position: absolute;
-  right: 15px;
-  top: 180px;
+  right: 20px;
+  top: 195px;
   font-size: 28px;
   color: #fff;
 }
@@ -128,24 +142,26 @@ header{
   text-align: center;
 }*/
 
-.btn{
+/*.btn{
   width: 100%;
   background: none;
   border: 2px solid #4caf50;
   color: white;
-  padding: 5px;
+  padding: 10px;
   font-size: 18px;
   cursor: pointer;
-  margin: 12px 0;
+  margin: 20px 0;
+}*/
+.login{
+  padding-top: 10px;
+  margin-left: 45px;
 }
-.button{
-  width: 100%;
+.button{ 
+  border-radius: 50px;
+  width: 150px;
   background:  none;
   border: 2px solid #4caf50;
   color: white;
-  padding: 5px;
   font-size: 18px;
   cursor: pointer;
-  margin: 12px 0;
-  
 }
